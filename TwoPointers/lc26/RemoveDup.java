@@ -1,4 +1,4 @@
-package TwoPointers.RemoveDup;
+package TwoPointers.lc26;
 
 public class RemoveDup {
   public static int removeDup(int[] arr) {
