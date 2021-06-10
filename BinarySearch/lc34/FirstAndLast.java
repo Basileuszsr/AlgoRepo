@@ -2,7 +2,7 @@ public class FirstAndLast {
     public int[] firstAndLast(int[] nums, int target) {
         int[] result = new int[] { -1, -1 };
         result[0] = findMax(nums, target, false);
-        if (first != -1) {
+        if (result[0] != -1) {
             result[1] = findMax(nums, target, true);
         }
         return result;
@@ -29,5 +29,9 @@ public class FirstAndLast {
 
         }
         return index;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Yes!");
     }
 }
