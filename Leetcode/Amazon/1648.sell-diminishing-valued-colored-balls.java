@@ -1,3 +1,4 @@
+package Amazon;
 /*
  * @lc app=leetcode id=1648 lang=java
  *
@@ -13,7 +14,7 @@ class Solution {
         int [] arr=inventory;
         //排序，这里o(NlogN)
         Arrays.sort(arr);
-        int i=arr.length-1;
+        int i = arr.length-1;
         //进行取球的操作，这里是是O(n)
         while(orders!=0){
            //看上去有两层循环，其实第二层循环的每个元素最多访问一次；
@@ -21,13 +22,13 @@ class Solution {
                 i--;
             }
             //计算当前数量最多的球有多少种
-            int counter=arr.length-i;
+            int counter = arr.length-i;
             int k;
-            int l=0;
-            if(i==0){
-                k=arr[i];
+            int l = 0;
+            if(i == 0){
+                k = arr[i];
             }else{
-                k=arr[i]-arr[i-1];
+                k = arr[i] - arr[i-1];
             }
             //counter*k是我们即将拿出的球，如果他大于我们的目标数，那么进行一个限制操作
             if(orders-counter*k<0){
