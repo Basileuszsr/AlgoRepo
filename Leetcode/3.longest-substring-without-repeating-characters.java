@@ -1,3 +1,10 @@
+/*
+ * @lc app=leetcode id=3 lang=java
+ *
+ * [3] Longest Substring Without Repeating Characters
+ */
+
+// @lc code=start
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s == null) return 0;
@@ -15,3 +22,5 @@ class Solution {
         return maxLen;
     }
 }
+// @lc code=end
+
